@@ -642,23 +642,7 @@ end
 
 
 ##### Packaging
-
-
-begin
-  require 'jeweler'
-  Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "passenger-jmazzi"
-    gemspec.summary = "Passenger with backtraces removed"
-    gemspec.description = "Passenger with backtraces removed"
-    gemspec.email = "incoming1@mailheist.com"
-    gemspec.homepage = "http://github.com/jmazzi/passenger"
-    gemspec.authors = ["Justin Mazzi"]
-  end
-rescue LoadError
-  puts "Jeweler not available. Install it with: gem install jeweler"
-end
-
-
+require 'lib/jeweler_spec'
 spec = Gem::Specification.new do |s|
 	s.platform = Gem::Platform::RUBY
 	s.homepage = "http://www.modrails.com/"

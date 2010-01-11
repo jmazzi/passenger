@@ -80,6 +80,7 @@ begin
       '--main' << 'README' <<
       '--title' << 'Passenger Ruby API'
   end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"
 end
