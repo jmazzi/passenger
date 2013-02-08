@@ -349,6 +349,7 @@ module Dependencies # :nodoc: all
 				rescue LoadError
 				end
 				require 'rack'
+				require 'phusion_passenger/rack/cookie'
 				result.found
 			rescue LoadError
 				result.not_found
